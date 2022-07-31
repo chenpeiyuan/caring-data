@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQQK2QXCBB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQQK2QXCBB');
+    </script>
+
+    <title>{{ .Title }}</title>
+
+    <style>
+        html {
+            font-family: Avenir,Helvetica,Arial,sans-serif;
+            line-height: 1.5;
+            font-size: large;
+        }
+
+        div.main {
+            text-align: center;
+            max-width: 992px;
+            margin: auto;
+        }
+
+        blockquote {
+            border-left: 2px solid rgb(204 204 204);
+            padding: 0.1em 1em;
+            margin-left: 0.75em;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2 style="text-align: left;">{{ .Title }}</h2>
+        <div style="text-align: left;">
+            {{ .Content }}
+        </div>
+    </div>
+</body>
+</html>

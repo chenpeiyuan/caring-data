@@ -1,0 +1,10 @@
+baseURL = 'https://caring.ustbtech.cn/'
+languageCode = 'zh-CN'
+title = 'My New Hugo Site'
+markup.goldmark.renderer.unsafe = true
+outputFormats.json.permalinkable = true
+outputFormats.amp.permalinkable = true
+outputFormats.html.permalinkable = true
+[mediaTypes]
+    [mediaTypes.'text/html']
+        suffixes = ['htm']
