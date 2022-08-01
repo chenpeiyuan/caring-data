@@ -33,7 +33,7 @@ jobs:
 
       - name: Upload
         run: |
-          ./github/bin/ossutil64 \
+          ./.github/bin/ossutil64 \
           -e oss-cn-beijing.aliyuncs.com \
           -i ${{ secrets.OSS_AccessKey_ID }} \
           -k ${{ secrets.OSS_AccessKey_Secret }} \
