@@ -4,7 +4,6 @@ date: 2022-07-27T23:26:28+08:00
 draft: false
 outputs:
 - html
-- json
 ---
 
 # 微信设置字体大小
