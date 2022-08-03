@@ -1,5 +1,5 @@
 ---
-title: 微信字体大小设置
+title: 微信字体大小
 date: 2022-08-03T10:00:00+08:00
 draft: false
 ios_icon: textformat.size

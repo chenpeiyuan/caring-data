@@ -1,5 +1,5 @@
 ---
-title: 苹果手机使用和设置
+title: iPhone的使用
 weight: 2
 ios_icon: iphone
 outputs:
