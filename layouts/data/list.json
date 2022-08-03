@@ -1,1 +1,1 @@
-{{ $s := slice }}{{ range .Pages.ByWeight }}{{ $s = $s | append (dict "title" .Title "is_dir" .IsNode "link" .Permalink "icon" .Params.icon) }}{{ end }}{{ $s | jsonify }}
+{{ $s := slice }}{{ range .Pages.ByWeight }}{{ $s = $s | append (dict "title" .Title "is_dir" .IsNode "link" .Permalink "ios_icon" .Params.ios_icon) }}{{ end }}{{ $s | jsonify }}

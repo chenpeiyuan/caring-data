@@ -1,7 +1,7 @@
 ---
 title: 微信使用和设置
 weight: 20
-icon: message
+ios_icon: message
 outputs:
 - html
 - json

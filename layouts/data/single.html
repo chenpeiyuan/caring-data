@@ -18,9 +18,8 @@
 
     <style>
         html {
+            font: -apple-system-body;
             font-family: Avenir,Helvetica,Arial,sans-serif;
-            line-height: 1.5;
-            font-size: large;
         }
 
         div.main {
@@ -43,7 +42,7 @@
 <body>
     <div class="main">
         <h2 style="text-align: left;">{{ .Title }}</h2>
-        <div style="text-align: left;">
+        <div style="text-align: left; line-height: 2;">
             {{ .Content }}
         </div>
     </div>
