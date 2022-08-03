@@ -3,6 +3,7 @@ title: 微信关怀模式
 date: 2022-08-03T10:00:00+08:00
 draft: false
 ios_icon: heart
+web_icon: "fas fa-heart"
 outputs:
 - html
 ---

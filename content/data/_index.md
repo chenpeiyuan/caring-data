@@ -1,5 +1,5 @@
 ---
-title: "全部内容"
+title: 首页
 outputs:
 - html
 - json
