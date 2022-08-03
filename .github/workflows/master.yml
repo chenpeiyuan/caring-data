@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+.github/workflows/master.yml# This is a basic workflow to help you get started with Actions
 
 name: build-and-deploy-to-aliyun
 
@@ -31,12 +31,27 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Upload
+      - name: Upload data dir
         run: |
           ./.github/bin/ossutil64 \
           -e oss-cn-beijing.aliyuncs.com \
           -i ${{ secrets.OSS_AccessKey_ID }} \
           -k ${{ secrets.OSS_AccessKey_Secret }} \
-          sync --force --delete \
-          ./public/data \
-          oss://caring-data/data
+          sync --force --update --delete \
+          ./public/data oss://caring-data/data
+      - name: Upload index.html
+        run: |
+          ./.github/bin/ossutil64 \
+          -e oss-cn-beijing.aliyuncs.com \
+          -i ${{ secrets.OSS_AccessKey_ID }} \
+          -k ${{ secrets.OSS_AccessKey_Secret }} \
+          cp --force --update \
+          ./public/index.html oss://caring-data/index.html
+      - name: Upload sitemap.xml
+        run: |
+          ./.github/bin/ossutil64 \
+          -e oss-cn-beijing.aliyuncs.com \
+          -i ${{ secrets.OSS_AccessKey_ID }} \
+          -k ${{ secrets.OSS_AccessKey_Secret }} \
+          cp --force --update \
+          ./public/sitemap.xml oss://caring-data/sitemap.xml
