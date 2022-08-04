@@ -1,6 +1,6 @@
 baseURL = 'https://caring.ustbtech.cn/'
 languageCode = 'zh-CN'
-title = 'My New Hugo Site'
+title = '爱老助手'
 markup.goldmark.renderer.unsafe = true
 outputFormats.json.permalinkable = true
 outputFormats.html.permalinkable = true
