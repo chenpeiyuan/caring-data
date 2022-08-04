@@ -18,7 +18,7 @@ outputs:
 
 2. 使用 Google Analytics 收集**匿名**的应用访问数据用于统计（如：页面打开次数和页面停留等）。
 
-3. 应用为开源产品: 
+3. 本应用为开源产品: 
    - [iOS应用repo](https://github.com/chenpeiyuan/caring-ios)
    - [网页服务repo](https://github.com/chenpeiyuan/caring-data)
 
