@@ -39,6 +39,14 @@ jobs:
           -k ${{ secrets.OSS_AccessKey_Secret }} \
           sync --force --update --delete \
           ./public/data oss://caring-data/data
+      - name: Upload page dir
+        run: |
+          ./.github/bin/ossutil64 \
+          -e oss-cn-beijing.aliyuncs.com \
+          -i ${{ secrets.OSS_AccessKey_ID }} \
+          -k ${{ secrets.OSS_AccessKey_Secret }} \
+          sync --force --update --delete \
+          ./public/page oss://caring-data/page
       - name: Upload index.html
         run: |
           ./.github/bin/ossutil64 \
