@@ -19,7 +19,7 @@
         let isHome = '{{ path.Clean .RelPermalink }}' === '/data';
     </script>
 
-    <title>{{ .Title }}</title>
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
 
     <style>
         html {
@@ -46,10 +46,6 @@
         #header > a {
             font-weight: bold;
             text-decoration: none;
-        }
-
-        ul, li {
-            list-style-type: none;
         }
     </style>
 </head>

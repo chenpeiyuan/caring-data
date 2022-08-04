@@ -10,8 +10,8 @@
     <h2>{{ .Title }}</h2>
     <div style="line-height: 2;">
         {{ range .Pages.ByWeight }}
-        <li>
-            <i class="{{ .Params.web_icon | default "fas fa-star" }}"></i>
+        <li style="list-style-type:none;">
+            <i class="{{ .Params.web_icon | default "fas fa-star" }} fa-fw"></i>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
         </li>
         {{ end }}
