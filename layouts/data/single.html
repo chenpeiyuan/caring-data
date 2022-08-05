@@ -1,10 +1,20 @@
 {{ define "main" }}
+    <style>
+        #content img {
+            width: 100%;
+            max-width: 360px;
+            alignment: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
     <p id="header" hidden="hidden">
         <a href="../" style="text-align: left">< 上一级</a>
         <a href="/data" style="float: right">首页</a>
     </p>
     <h2>{{ .Title }}</h2>
-    <div style="line-height: 2;">
+    <div id="content" style="line-height: 2;">
         {{ .Content }}
     </div>
 
