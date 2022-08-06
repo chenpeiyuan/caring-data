@@ -1,6 +1,7 @@
 baseURL = 'https://caring.ustbtech.cn/'
 languageCode = 'zh-CN'
 title = '爱老助手'
+disableKinds = ["taxonomy", "term"]
 markup.goldmark.renderer.unsafe = true
 outputFormats.json.permalinkable = true
 outputFormats.html.permalinkable = true
